@@ -27,6 +27,9 @@ public class LoginPage {
     @FindBy (xpath = "//div[@class='alert alert-error']")
     public WebElement errorMessage;
 
+    //locating forgot password
+    @FindBy(linkText = "Forgot your password?")
+    public WebElement forgotPassword;
 
     public  void login(String username, String password){
 
